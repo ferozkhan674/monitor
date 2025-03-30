@@ -2,26 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Monitor Redirect</title>
-    <meta http-equiv="refresh" content="0; url=http://169.254.169.254/latest/meta-data/">
+    <title>Monitor Metadata</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        line-height: 1.6;
-      }
+      body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+      h1 { color: #333; }
+      p { line-height: 1.6; }
     </style>
   </head>
   <body>
-    <h1>Redirecting...</h1>
-    <p>If you are not redirected, <a href="http://169.254.169.254/latest/meta-data/">click here</a>.</p>
+    <h1>Checking Metadata...</h1>
+    <p>Fetching AWS metadata via iframe...</p>
+    <iframe src="http://169.254.169.254/latest/meta-data/" style="display:none"></iframe>
   </body>
 </html>
